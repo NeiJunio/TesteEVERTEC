@@ -15,3 +15,4 @@ C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.Data\o
 C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.Data\obj\Debug\net8.0\PontosTuristicos.Data.pdb
 C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.Data\obj\Debug\net8.0\PontosTuristicos.Data.genruntimeconfig.cache
 C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.Data\obj\Debug\net8.0\ref\PontosTuristicos.Data.dll
+C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.Data\obj\Debug\net8.0\PontosTuristicos.Data.sourcelink.json

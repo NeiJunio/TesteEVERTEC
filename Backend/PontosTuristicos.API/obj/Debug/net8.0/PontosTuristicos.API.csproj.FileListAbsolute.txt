@@ -148,3 +148,4 @@ C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.API\ob
 C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.API\obj\Debug\net8.0\PontosTuristicos.API.genruntimeconfig.cache
 C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.API\obj\Debug\net8.0\ref\PontosTuristicos.API.dll
 C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.API\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.API\obj\Debug\net8.0\PontosTuristicos.API.sourcelink.json

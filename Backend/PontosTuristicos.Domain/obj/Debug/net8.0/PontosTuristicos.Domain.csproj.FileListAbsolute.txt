@@ -9,3 +9,4 @@ C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.Domain
 C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.Domain\obj\Debug\net8.0\refint\PontosTuristicos.Domain.dll
 C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.Domain\obj\Debug\net8.0\PontosTuristicos.Domain.pdb
 C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.Domain\obj\Debug\net8.0\ref\PontosTuristicos.Domain.dll
+C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.Domain\obj\Debug\net8.0\PontosTuristicos.Domain.sourcelink.json

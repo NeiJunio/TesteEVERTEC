@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PontosTuristicos.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2b3c5a98668531582a0611462b4c546281f59a61")]
 [assembly: System.Reflection.AssemblyProductAttribute("PontosTuristicos.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PontosTuristicos.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
