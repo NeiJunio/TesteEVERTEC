@@ -1,0 +1,17 @@
+C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.Data\bin\Debug\net8.0\PontosTuristicos.Data.deps.json
+C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.Data\bin\Debug\net8.0\PontosTuristicos.Data.runtimeconfig.json
+C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.Data\bin\Debug\net8.0\PontosTuristicos.Data.dll
+C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.Data\bin\Debug\net8.0\PontosTuristicos.Data.pdb
+C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.Data\bin\Debug\net8.0\PontosTuristicos.Domain.dll
+C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.Data\bin\Debug\net8.0\PontosTuristicos.Domain.pdb
+C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.Data\obj\Debug\net8.0\PontosTuristicos.Data.csproj.AssemblyReference.cache
+C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.Data\obj\Debug\net8.0\PontosTuristicos.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.Data\obj\Debug\net8.0\PontosTuristicos.Data.AssemblyInfoInputs.cache
+C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.Data\obj\Debug\net8.0\PontosTuristicos.Data.AssemblyInfo.cs
+C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.Data\obj\Debug\net8.0\PontosTuristicos.Data.csproj.CoreCompileInputs.cache
+C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.Data\obj\Debug\net8.0\PontosTu.088DF783.Up2Date
+C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.Data\obj\Debug\net8.0\PontosTuristicos.Data.dll
+C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.Data\obj\Debug\net8.0\refint\PontosTuristicos.Data.dll
+C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.Data\obj\Debug\net8.0\PontosTuristicos.Data.pdb
+C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.Data\obj\Debug\net8.0\PontosTuristicos.Data.genruntimeconfig.cache
+C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.Data\obj\Debug\net8.0\ref\PontosTuristicos.Data.dll
