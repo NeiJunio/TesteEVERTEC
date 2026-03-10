@@ -6,7 +6,7 @@ using PontosTuristicos.Domain.DTOs;
 using PontosTuristicos.Domain.Entities;
 
 namespace PontosTuristicos.API.Controllers;
-[Route("api/[controller]")]
+[Route("[controller]")]
 [ApiController]
 public class PontosTuristicosController : ControllerBase
 {

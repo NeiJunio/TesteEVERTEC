@@ -1,42 +1,217 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+/* Wrapper Principal: Ocupa a tela toda e centraliza o conteúdo */
+.main-wrapper {
+    background-color: #f1f5f9; /* Cinza claro suave */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    padding: 40px 0;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Container: Mantém os 80% de largura e organiza a coluna */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    /* min-height: 100vh; */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* Título marcante */
+.title {
+    color: #1e293b;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+    margin: 0;
 }
 
+/* Área de Busca: Flexbox com proporção 4:1 */
+.search-area {
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.search-input-container {
+    flex: 4; /* Ocupa 4 partes (80%) */
+}
+
+/* Garante que o input interno preencha o container flex */
+.search-input-container input {
+    width: 100%;
+}
+
+.add-button {
+    flex: 1; /* Ocupa 1 parte (20%) */
+    background-color: #2563eb; /* Seu Azul */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    height: 48px; /* Altura fixa para alinhar com o input */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.add-button:hover {
+    background-color: #1d4ed8;
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+/* Grid de Cards: Responsivo automático */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 24px; 
+    width: 100%;
+    align-items: start;
+    padding-bottom: 40px;
+}
+
+/* Estilo do Card individual */
 .card {
-  padding: 2em;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 24px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.read-the-docs {
-  color: #888;
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0;
+}
+
+.badge {
+    background-color: #eff6ff;
+    color: #2563eb;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.card-desc {
+    color: #475569;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* Limita a 3 linhas para manter o card alinhado */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card-footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16px;
+    border-top: 1px solid #f1f5f9;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.875rem;
+    color: #64748b;
+}
+
+.delete-button {
+    background: transparent;
+    color: #94a3b8;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 6px;
+    transition: all 0.2s;
+}
+
+.delete-button:hover {
+    color: #ef4444;
+    background-color: #fef2f2;
+}
+
+/* --- MEDIA QUERIES (RESPONSIVIDADE) --- */
+
+/* Tablets e Celulares Médios */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px 0;
+    }
+
+    .search-area {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+    }
+
+    .search-input-container {
+        width: 100%;
+    }
+
+    .add-button {
+        width: 100%;
+        height: 50px;
+    }
+
+    .title {
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+/* Celulares Pequenos */
+@media (max-width: 480px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .card-header {
+        flex-direction: column;
+        gap: 8px;
+    }
 }
