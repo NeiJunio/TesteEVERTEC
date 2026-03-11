@@ -13,6 +13,11 @@
   padding: 16px;
 }
 
+/* Isso resolve o problema de sobreposição para o projeto inteiro */
+:global(.swal2-container) {
+    z-index: 10001 !important;
+}
+
 .modalContent {
   background: #ffffff;
   width: 100%;

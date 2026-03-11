@@ -10,3 +10,15 @@ C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.Domain
 C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.Domain\obj\Debug\net8.0\PontosTuristicos.Domain.pdb
 C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.Domain\obj\Debug\net8.0\ref\PontosTuristicos.Domain.dll
 C:\Users\Nei Junio\Documents\Github\TesteEVERTEC\Backend\PontosTuristicos.Domain\obj\Debug\net8.0\PontosTuristicos.Domain.sourcelink.json
+C:\Users\Usuario\Documents\GitHub\TesteEVERTEC\Backend\PontosTuristicos.Domain\bin\Debug\net8.0\PontosTuristicos.Domain.deps.json
+C:\Users\Usuario\Documents\GitHub\TesteEVERTEC\Backend\PontosTuristicos.Domain\bin\Debug\net8.0\PontosTuristicos.Domain.dll
+C:\Users\Usuario\Documents\GitHub\TesteEVERTEC\Backend\PontosTuristicos.Domain\bin\Debug\net8.0\PontosTuristicos.Domain.pdb
+C:\Users\Usuario\Documents\GitHub\TesteEVERTEC\Backend\PontosTuristicos.Domain\obj\Debug\net8.0\PontosTuristicos.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Usuario\Documents\GitHub\TesteEVERTEC\Backend\PontosTuristicos.Domain\obj\Debug\net8.0\PontosTuristicos.Domain.AssemblyInfoInputs.cache
+C:\Users\Usuario\Documents\GitHub\TesteEVERTEC\Backend\PontosTuristicos.Domain\obj\Debug\net8.0\PontosTuristicos.Domain.AssemblyInfo.cs
+C:\Users\Usuario\Documents\GitHub\TesteEVERTEC\Backend\PontosTuristicos.Domain\obj\Debug\net8.0\PontosTuristicos.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\GitHub\TesteEVERTEC\Backend\PontosTuristicos.Domain\obj\Debug\net8.0\PontosTuristicos.Domain.sourcelink.json
+C:\Users\Usuario\Documents\GitHub\TesteEVERTEC\Backend\PontosTuristicos.Domain\obj\Debug\net8.0\PontosTuristicos.Domain.dll
+C:\Users\Usuario\Documents\GitHub\TesteEVERTEC\Backend\PontosTuristicos.Domain\obj\Debug\net8.0\refint\PontosTuristicos.Domain.dll
+C:\Users\Usuario\Documents\GitHub\TesteEVERTEC\Backend\PontosTuristicos.Domain\obj\Debug\net8.0\PontosTuristicos.Domain.pdb
+C:\Users\Usuario\Documents\GitHub\TesteEVERTEC\Backend\PontosTuristicos.Domain\obj\Debug\net8.0\ref\PontosTuristicos.Domain.dll

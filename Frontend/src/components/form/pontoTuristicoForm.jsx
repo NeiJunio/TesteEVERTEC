@@ -1,13 +1,15 @@
 import { useEffect, useState } from 'react';
-import { Save, X, MapPin, AlignLeft, Type, Info, Home } from 'lucide-react';
-import styles from './PontoTuristicoForm.module.css';
 
 import { useEstados } from '../../hooks/useEstados';
 import { useCidades } from '../../hooks/useCidades';
 
+import { Save, X, MapPin, AlignLeft, Type, Info, Home } from 'lucide-react';
+
+import styles from './PontoTuristicoForm.module.css';
+
 export default function PontoTuristicoForm({ initialData, onSubmit, onCancel, isEditing }) {
 
-    const { estados, loading, error, fetchEstados } = useEstados();
+    const { estados, fetchEstados } = useEstados();
     const { cidades, loadingCidades, fetchCidades } = useCidades();
 
     const [formData, setFormData] = useState(() => {
@@ -78,7 +80,7 @@ export default function PontoTuristicoForm({ initialData, onSubmit, onCancel, is
 
                 <div className={styles.inputGroup}>
                     <label><AlignLeft size={14} /> Descrição</label>
-                    <textarea name="descricao" value={formData.descricao} onChange={handleChange} required rows="3" placeholder="Conte um pouco sobre este lugar..." />
+                    <textarea name="descricao" value={formData.descricao} onChange={handleChange} required rows="3" maxLength={100} placeholder="Conte um pouco sobre este lugar..." />
                 </div>
 
                 <div className={styles.addressGrid}>
@@ -86,6 +88,7 @@ export default function PontoTuristicoForm({ initialData, onSubmit, onCancel, is
                         <label><Home size={14} /> Endereço</label>
                         <div className={styles.inlineRow}>
                             <select name="tipoLogradouro" value={formData.tipoLogradouro} onChange={handleChange} className={styles.selectType}>
+                                <option value="">Selecione...</option>
                                 <option value="Rua">Rua</option>
                                 <option value="Avenida">Avenida</option>
                                 <option value="Praça">Praça</option>

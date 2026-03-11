@@ -1,10 +1,13 @@
 import { useState, useEffect, useRef } from 'react';
-import { usePontosTuristicos } from '../hooks/usePontosTuristicos';
-import Input from '../components/ui/input/input';
-import { Card } from '../components/card/card';
-import { Pagination } from '../components/ui/pagination/pagination';
-import { PlusCircle } from 'lucide-react';
 import { useNavigate, useLocation } from 'react-router-dom';
+
+import { usePontosTuristicos } from '../hooks/usePontosTuristicos';
+
+import Pagination from '../components/ui/pagination/pagination';
+import Card from '../components/card/card';
+import Input from '../components/ui/input/input';
+
+import { PlusCircle } from 'lucide-react';
 
 import styles from './Home.module.css';
 
@@ -19,20 +22,29 @@ export default function Home() {
 
     const [searchTerm, setSearchTerm] = useState("");
     const isMounted = useRef(false);
-    
+
     const navigate = useNavigate();
     const location = useLocation();
 
     // 1. Efeito de sincronização com a URL:
     // Sempre que voltamos para a raiz "/", atualizamos a lista.
     // Isso substitui a necessidade de dar reload na página inteira.
+    // Home.jsx
+
+    // Home.jsx
+
+    // 1. Efeito de sincronização com a URL:
     useEffect(() => {
+        // Sempre que a chave da URL mudar e estivermos na Home, buscamos os dados.
+        // O location.key garante que esse efeito rode mesmo se você editou e voltou pra '/'
         if (location.pathname === '/') {
-            // Se houver um searchTerm, mantemos o filtro ao atualizar
             fetchPontosTuristicos(searchTerm, page);
         }
-        // eslint-disable-next-line react-hooks/exhaustive-deps
-    }, [location.pathname]); 
+
+        // Adicionamos location.key aqui
+    }, [location.pathname, location.key, fetchPontosTuristicos]);
+
+
 
     // 2. Efeito de Debounce para a Pesquisa:
     useEffect(() => {
@@ -80,11 +92,11 @@ export default function Home() {
                 <div className={styles['content-area']}>
                     {/* Feedback visual de loading pode entrar aqui */}
                     {loading && pontosTuristicos.length === 0 ? (
-                         <div className={styles.loaderArea}>Carregando...</div>
+                        <div className={styles.loaderArea}>Carregando...</div>
                     ) : (
                         <div className={styles.grid}>
                             {pontosTuristicos.map((ponto) => (
-                                <Card key={ponto.id} ponto={ponto} />
+                                <Card key={ponto.id} ponto={ponto} onDelete={() => fetchPontosTuristicos(searchTerm, page)} />
                             ))}
                         </div>
                     )}
