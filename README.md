@@ -221,6 +221,6 @@ Se o frontend não consegue falar com a API, verifique:
 
 6. **Verifique o console do navegador** – o painel de rede (network) e console exibem o URL usado e eventuais erros (404, 500, CORS, etc.).
 
-Esses passos geralmente apontam a raiz do problema e garantem que frontend e backend conversem normalmente.
+
 
 
