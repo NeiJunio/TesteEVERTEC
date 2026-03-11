@@ -1,8 +1,15 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Save, X, MapPin, AlignLeft, Type, Info, Home } from 'lucide-react';
 import styles from './PontoTuristicoForm.module.css';
 
+import { useEstados } from '../../hooks/useEstados';
+import { useCidades } from '../../hooks/useCidades';
+
 export default function PontoTuristicoForm({ initialData, onSubmit, onCancel, isEditing }) {
+
+    const { estados, loading, error, fetchEstados } = useEstados();
+    const { cidades, loadingCidades, fetchCidades } = useCidades();
+
     const [formData, setFormData] = useState(() => {
         const regex = /^(?<tipo>\w+)\s+(?<nome>[^,]+),\s*Nº\s*(?<numero>.*)/i;
         const match = initialData?.localizacao?.match(regex);
@@ -18,6 +25,17 @@ export default function PontoTuristicoForm({ initialData, onSubmit, onCancel, is
             referencia: initialData?.referencia || ''
         };
     });
+
+    useEffect(() => {
+        fetchEstados();
+    }, [fetchEstados]);
+
+    useEffect(() => {
+        if (formData.estado) {
+            fetchCidades(formData.estado);
+        }
+    }, [formData.estado, fetchCidades]);
+
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -35,6 +53,8 @@ export default function PontoTuristicoForm({ initialData, onSubmit, onCancel, is
 
         onSubmit(payload);
     };
+
+    console.log("Estados disponíveis   ww:", estados); // Log para verificar os estados carregados
 
     return (
         <form className={styles.form} onSubmit={handleSubmit}>
@@ -83,11 +103,37 @@ export default function PontoTuristicoForm({ initialData, onSubmit, onCancel, is
                     </div>
                     <div className={styles.inputGroup}>
                         <label>Estado (UF)</label>
-                        <input name="estado" value={formData.estado} onChange={handleChange} maxLength="2" required placeholder="SP" className={styles.upperCase} />
+                        <select
+                            name="estado"
+                            value={formData.estado}
+                            onChange={handleChange}
+                            required
+                            className={styles.selectField}
+                        >
+                            <option value="">Selecione...</option>
+                            {estados.map((est) => (
+                                <option key={est.id} value={est.sigla}>
+                                    {est.sigla}
+                                </option>
+                            ))}
+                        </select>
+                        {/* <input name="estado" value={formData.estado} onChange={handleChange} maxLength="2" required placeholder="SP" className={styles.upperCase} /> */}
                     </div>
                     <div className={styles.inputGroup}>
                         <label>Cidade</label>
-                        <input name="cidade" value={formData.cidade} onChange={handleChange} required placeholder="Ex: São Paulo" />
+                        <select
+                            name="cidade"
+                            value={formData.cidade}
+                            onChange={handleChange}
+                            required
+                            disabled={!formData.estado || loadingCidades}
+                            className={styles.selectField}
+                        >
+                            <option value="">{loadingCidades ? 'Carregando...' : 'Selecione'}</option>
+                            {cidades.map(cid => (
+                                <option key={cid.id} value={cid.nome}>{cid.nome}</option>
+                            ))}
+                        </select>
                     </div>
                 </div>
 
