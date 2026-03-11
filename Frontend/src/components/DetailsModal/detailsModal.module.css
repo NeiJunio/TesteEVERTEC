@@ -17,7 +17,6 @@
     background: #ffffff;
     width: 100%;
     max-width: 580px;
-    /* Aumentado levemente para acomodar o logradouro */
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.25);
@@ -62,7 +61,6 @@
     font-weight: 800;
 }
 
-/* --- BOTÃO DE FECHAR ANIMADO --- */
 .closeBtn {
     background: #f1f5f9;
     border: none;
@@ -78,11 +76,8 @@
 
 .closeBtn:hover {
     background: #fee2e2;
-    /* Vermelho bem clarinho */
     color: #ef4444;
-    /* Ícone vermelho */
     transform: rotate(90deg);
-    /* O giro que faltava! */
 }
 
 .closeBtn:active {
@@ -121,10 +116,8 @@
     width: 100%;
 }
 
-/* --- GRID AJUSTADA --- */
 .infoGrid {
     display: grid;
-    /* 1fr para Cidade/UF e 2fr para Logradouro (mais espaço) */
     grid-template-columns: 1fr 2fr;
     gap: 24px;
 }
@@ -135,7 +128,6 @@
     font-weight: 600;
     font-size: 0.95rem;
     word-break: break-word;
-    /* Evita que endereços longos quebrem o layout */
 }
 
 .referenceBox {
@@ -196,7 +188,6 @@
 @media (max-width: 520px) {
     .infoGrid {
         grid-template-columns: 1fr;
-        /* Empilha em telas pequenas */
         gap: 20px;
     }
 

@@ -1,4 +1,4 @@
-/* Reset local para garantir que o padding não estoure o tamanho */
+
 .form,
 .form * {
     box-sizing: border-box;
@@ -85,10 +85,8 @@
     font-size: 0.9rem;
     background: #f8fafc;
     width: 100%;
-    /* Ocupa todo o espaço do grupo */
 }
 
-/* --- LINHA DE ENDEREÇO (TIPO + LOGRADOURO) --- */
 .inlineRow {
     display: flex;
     gap: 12px;
@@ -97,21 +95,16 @@
 
 .selectType {
     flex: 0 0 120px;
-    /* Largura fixa de 120px, não encolhe nem cresce */
 }
 
 .inputStreet {
     flex: 1;
-    /* Ocupa TODO o resto do espaço disponível */
     min-width: 0;
-    /* Impede o input de estourar o flex container */
 }
 
-/* --- GRID DE LOCALIZAÇÃO (NÚMERO + UF + CIDADE) --- */
 .locationGrid {
     display: flex;
     flex-wrap: wrap;
-    /* Se não couber, a cidade desce */
     gap: 12px;
     width: 100%;
 }
@@ -120,16 +113,13 @@
     width: 80px;
 }
 
-/* Grupo do Número */
 .locationGrid>div:nth-child(2) {
     width: 120px;
 }
 
-/* Grupo da UF */
 .locationGrid>div:nth-child(3) {
     flex: 1;
     min-width: 250px;
-    /* Se a área da cidade for menor que 250px, ela quebra para baixo */
 }
 
 .upperCase {
@@ -137,7 +127,6 @@
     text-align: center;
 }
 
-/* --- RODAPÉ --- */
 .footer {
     padding: 16px 20px;
     background: #f8fafc;
@@ -170,7 +159,6 @@
     cursor: pointer;
 }
 
-/* --- RESPONSIVIDADE --- */
 @media (max-width: 550px) {
     .inlineRow {
         flex-direction: column;
@@ -183,7 +171,6 @@
 
     .locationGrid>div {
         width: 100% !important;
-        /* Em mobile, cada campo vira uma linha */
     }
 
     .footer {

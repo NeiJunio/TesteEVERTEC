@@ -19,7 +19,7 @@ export default function PontoTuristicoForm({ initialData, onSubmit, onCancel, is
         return {
             nome: initialData?.nome || '',
             descricao: initialData?.descricao || '',
-            tipoLogradouro: match?.groups.tipo || 'Rua',
+            tipoLogradouro: match?.groups.tipo || '',
             logradouro: match?.groups.nome || '',
             numero: match?.groups.numero || '',
             cidade: initialData?.cidade || '',
@@ -56,11 +56,9 @@ export default function PontoTuristicoForm({ initialData, onSubmit, onCancel, is
         onSubmit(payload);
     };
 
-    console.log("Estados disponíveis   ww:", estados); // Log para verificar os estados carregados
-
     return (
         <form className={styles.form} onSubmit={handleSubmit}>
-            <header className={styles.header}>
+            {/* <header className={styles.header}>
                 <div className={styles.headerTitle}>
                     <div className={styles.iconCircle}>
                         <MapPin size={20} />
@@ -70,7 +68,7 @@ export default function PontoTuristicoForm({ initialData, onSubmit, onCancel, is
                 <button type="button" onClick={onCancel} className={styles.closeBtn} aria-label="Fechar">
                     <X size={20} />
                 </button>
-            </header>
+            </header> */}
 
             <div className={styles.body}>
                 <div className={styles.inputGroup}>

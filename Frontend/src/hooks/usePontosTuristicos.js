@@ -5,7 +5,6 @@ export const usePontosTuristicos = () => {
     const [pontosTuristicos, setPontosTuristicos] = useState([]);
     const [loading, setLoading] = useState(false);
     
-    // Adicione os estados de paginação de volta
     const [page, setPage] = useState(1);
     const [totalPages, setTotalPages] = useState(1);
 
@@ -14,11 +13,8 @@ export const usePontosTuristicos = () => {
         try {
             const data = await getAllPontos(termo, pagina, itensPorPagina);
             
-            // Atualiza a lista de itens
             setPontosTuristicos(data.item || []);
             
-            // ATUALIZAÇÃO DA PAGINAÇÃO:
-            // O Service retorna data.total e data.paginaAtual
             const totalItens = data.total || 0;
             setTotalPages(Math.ceil(totalItens / itensPorPagina));
             setPage(data.paginaAtual || pagina);
@@ -33,8 +29,8 @@ export const usePontosTuristicos = () => {
     return { 
         pontosTuristicos, 
         loading, 
-        page,           // Exporte o estado atualizado
-        totalPages,     // Exporte o estado atualizado
+        page,           
+        totalPages,     
         fetchPontosTuristicos 
     };
 };

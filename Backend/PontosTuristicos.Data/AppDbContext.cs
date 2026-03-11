@@ -11,6 +11,5 @@ public class AppDbContext : DbContext
 {
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
-    // Esta propriedade vira a tabela "PontosTuristicos" no SQL Server
     public DbSet<PontoTuristico> PontosTuristicos { get; set; }
 }

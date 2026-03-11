@@ -16,7 +16,6 @@ export default function Card({ ponto, onDelete, onViewDetails }){
     const {removePonto} = usePontoTuristico();
 
     const handleViewDetails = () => {
-        // Navegamos para a rota, mas avisamos: "Guarde a minha posição atual como fundo"
         navigate(`/details/${ponto.id}`, { state: { background: location } });
     };
 

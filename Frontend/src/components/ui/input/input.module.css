@@ -8,7 +8,7 @@
 .label {
   font-size: 0.875rem;
   font-weight: 600;
-  color: #374151; /* Cinza escuro profissional */
+  color: #374151; 
   margin-left: 2px;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .inputField:focus {
-  border-color: #2563eb; /* O azul que você pediu */
+  border-color: #2563eb; 
   background-color: #fff;
   box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }

@@ -14,7 +14,7 @@ export const useEstados = () => {
         try {
             const data = await estadoService.getAllEstados();
             setEstados(data);
-            console.log("Estados carregados:", data); // Log para verificar os dados recebidos
+            
         } catch (err) {
             setError(err.message || "Erro ao carregar estados");
         } finally {

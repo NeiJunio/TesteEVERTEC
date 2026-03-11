@@ -1,4 +1,4 @@
-// src/services/cidades.service.js
+
 import axios from "axios";
 
 export async function getCidadesByUF(uf) {

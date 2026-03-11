@@ -44,7 +44,6 @@ export default function DetailsModal() {
         </header>
 
         <main className={styles.body}>
-          {/* Seção Principal: Descrição */}
           <section className={styles.section}>
             <label className={styles.label}>
               <AlignLeft size={16} /> Descrição Completa
@@ -54,7 +53,6 @@ export default function DetailsModal() {
 
           <div className={styles.divider} />
 
-          {/* Grid de Informações Geográficas */}
           <div className={styles.infoGrid}>
             <section className={styles.section}>
               <label className={styles.label}>
@@ -71,7 +69,6 @@ export default function DetailsModal() {
             </section>
           </div>
 
-          {/* Seção de Referência */}
           <section className={styles.section}>
             <label className={styles.label}>
               <Info size={16} /> Ponto de Referência
@@ -81,7 +78,6 @@ export default function DetailsModal() {
             </div>
           </section>
 
-          {/* Rodapé Interno com Datas */}
           <footer className={styles.modalFooter}>
             <div className={styles.dateInfo}>
               <Clock size={14} />

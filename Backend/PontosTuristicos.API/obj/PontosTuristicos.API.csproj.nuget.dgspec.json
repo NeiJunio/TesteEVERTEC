@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Usuario\\Documents\\GitHub\\TesteEVERTEC\\Backend\\PontosTuristicos.API\\PontosTuristicos.API.csproj": {}
+    "C:\\Users\\Nei Junio\\Documents\\Github\\TesteEVERTEC\\Backend\\PontosTuristicos.API\\PontosTuristicos.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Documents\\GitHub\\TesteEVERTEC\\Backend\\PontosTuristicos.API\\PontosTuristicos.API.csproj": {
+    "C:\\Users\\Nei Junio\\Documents\\Github\\TesteEVERTEC\\Backend\\PontosTuristicos.API\\PontosTuristicos.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\GitHub\\TesteEVERTEC\\Backend\\PontosTuristicos.API\\PontosTuristicos.API.csproj",
+        "projectUniqueName": "C:\\Users\\Nei Junio\\Documents\\Github\\TesteEVERTEC\\Backend\\PontosTuristicos.API\\PontosTuristicos.API.csproj",
         "projectName": "PontosTuristicos.API",
-        "projectPath": "C:\\Users\\Usuario\\Documents\\GitHub\\TesteEVERTEC\\Backend\\PontosTuristicos.API\\PontosTuristicos.API.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Documents\\GitHub\\TesteEVERTEC\\Backend\\PontosTuristicos.API\\obj\\",
+        "projectPath": "C:\\Users\\Nei Junio\\Documents\\Github\\TesteEVERTEC\\Backend\\PontosTuristicos.API\\PontosTuristicos.API.csproj",
+        "packagesPath": "C:\\Users\\Nei Junio\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nei Junio\\Documents\\Github\\TesteEVERTEC\\Backend\\PontosTuristicos.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nei Junio\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -32,11 +32,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Usuario\\Documents\\GitHub\\TesteEVERTEC\\Backend\\PontosTuristicos.Data\\PontosTuristicos.Data.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\Documents\\GitHub\\TesteEVERTEC\\Backend\\PontosTuristicos.Data\\PontosTuristicos.Data.csproj"
+              "C:\\Users\\Nei Junio\\Documents\\Github\\TesteEVERTEC\\Backend\\PontosTuristicos.Data\\PontosTuristicos.Data.csproj": {
+                "projectPath": "C:\\Users\\Nei Junio\\Documents\\Github\\TesteEVERTEC\\Backend\\PontosTuristicos.Data\\PontosTuristicos.Data.csproj"
               },
-              "C:\\Users\\Usuario\\Documents\\GitHub\\TesteEVERTEC\\Backend\\PontosTuristicos.Domain\\PontosTuristicos.Domain.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\Documents\\GitHub\\TesteEVERTEC\\Backend\\PontosTuristicos.Domain\\PontosTuristicos.Domain.csproj"
+              "C:\\Users\\Nei Junio\\Documents\\Github\\TesteEVERTEC\\Backend\\PontosTuristicos.Domain\\PontosTuristicos.Domain.csproj": {
+                "projectPath": "C:\\Users\\Nei Junio\\Documents\\Github\\TesteEVERTEC\\Backend\\PontosTuristicos.Domain\\PontosTuristicos.Domain.csproj"
               }
             }
           }
@@ -97,24 +97,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Usuario\\Documents\\GitHub\\TesteEVERTEC\\Backend\\PontosTuristicos.Data\\PontosTuristicos.Data.csproj": {
+    "C:\\Users\\Nei Junio\\Documents\\Github\\TesteEVERTEC\\Backend\\PontosTuristicos.Data\\PontosTuristicos.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\GitHub\\TesteEVERTEC\\Backend\\PontosTuristicos.Data\\PontosTuristicos.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Nei Junio\\Documents\\Github\\TesteEVERTEC\\Backend\\PontosTuristicos.Data\\PontosTuristicos.Data.csproj",
         "projectName": "PontosTuristicos.Data",
-        "projectPath": "C:\\Users\\Usuario\\Documents\\GitHub\\TesteEVERTEC\\Backend\\PontosTuristicos.Data\\PontosTuristicos.Data.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Documents\\GitHub\\TesteEVERTEC\\Backend\\PontosTuristicos.Data\\obj\\",
+        "projectPath": "C:\\Users\\Nei Junio\\Documents\\Github\\TesteEVERTEC\\Backend\\PontosTuristicos.Data\\PontosTuristicos.Data.csproj",
+        "packagesPath": "C:\\Users\\Nei Junio\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nei Junio\\Documents\\Github\\TesteEVERTEC\\Backend\\PontosTuristicos.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nei Junio\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -129,8 +129,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Usuario\\Documents\\GitHub\\TesteEVERTEC\\Backend\\PontosTuristicos.Domain\\PontosTuristicos.Domain.csproj": {
-                "projectPath": "C:\\Users\\Usuario\\Documents\\GitHub\\TesteEVERTEC\\Backend\\PontosTuristicos.Domain\\PontosTuristicos.Domain.csproj"
+              "C:\\Users\\Nei Junio\\Documents\\Github\\TesteEVERTEC\\Backend\\PontosTuristicos.Domain\\PontosTuristicos.Domain.csproj": {
+                "projectPath": "C:\\Users\\Nei Junio\\Documents\\Github\\TesteEVERTEC\\Backend\\PontosTuristicos.Domain\\PontosTuristicos.Domain.csproj"
               }
             }
           }
@@ -184,24 +184,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Usuario\\Documents\\GitHub\\TesteEVERTEC\\Backend\\PontosTuristicos.Domain\\PontosTuristicos.Domain.csproj": {
+    "C:\\Users\\Nei Junio\\Documents\\Github\\TesteEVERTEC\\Backend\\PontosTuristicos.Domain\\PontosTuristicos.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Documents\\GitHub\\TesteEVERTEC\\Backend\\PontosTuristicos.Domain\\PontosTuristicos.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Nei Junio\\Documents\\Github\\TesteEVERTEC\\Backend\\PontosTuristicos.Domain\\PontosTuristicos.Domain.csproj",
         "projectName": "PontosTuristicos.Domain",
-        "projectPath": "C:\\Users\\Usuario\\Documents\\GitHub\\TesteEVERTEC\\Backend\\PontosTuristicos.Domain\\PontosTuristicos.Domain.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Documents\\GitHub\\TesteEVERTEC\\Backend\\PontosTuristicos.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Nei Junio\\Documents\\Github\\TesteEVERTEC\\Backend\\PontosTuristicos.Domain\\PontosTuristicos.Domain.csproj",
+        "packagesPath": "C:\\Users\\Nei Junio\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Nei Junio\\Documents\\Github\\TesteEVERTEC\\Backend\\PontosTuristicos.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Nei Junio\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -249,7 +249,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.307/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

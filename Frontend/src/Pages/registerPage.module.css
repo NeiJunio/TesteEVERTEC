@@ -1,18 +1,44 @@
-/* src/pages/RegisterPage.module.css */
+
 
 .pageContainer {
-    min-height: calc(100vh - 70px); /* Desconta a altura do Header */
-    background-color: #f8fafc; /* Um cinza muito claro para dar contraste com o card branco */
+    min-height: calc(100vh - 70px); 
+    background-color: #f8fafc;
     padding: 40px 20px;
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Começa do topo com respiro */
+    align-items: flex-start; 
+}
+
+.headerTitleRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.closeBtn {
+    background: #f1f5f9;
+    border: none;
+    color: #64748b;
+    padding: 8px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.closeBtn:hover {
+    background: #fee2e2;
+    color: #ef4444;
+    transform: rotate(90deg);
 }
 
 .card {
     background: #ffffff;
     width: 100%;
-    max-width: 800px; /* Largura confortável para formulários */
+    max-width: 800px; 
     border-radius: 20px;
     box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.1), 
                 0 8px 10px -6px rgba(15, 23, 42, 0.1);
@@ -40,7 +66,6 @@
     margin: 0;
 }
 
-/* Estilo para o estado de carregamento na página inteira */
 .loader {
     display: flex;
     justify-content: center;
@@ -77,7 +102,6 @@
     }
 }
 
-/* Responsividade para Celulares */
 @media (max-width: 640px) {
     .pageContainer {
         padding: 16px;

@@ -11,8 +11,7 @@ export default function Pagination({ currentPage, totalPages, onPageChange }) {
             </span>
 
             <div className={styles.controls}>
-
-                {/* Botão Primeira Página (<<) */}
+          
                 <button
                     className={styles.button}
                     onClick={() => onPageChange(1)}
@@ -22,7 +21,6 @@ export default function Pagination({ currentPage, totalPages, onPageChange }) {
                     <ChevronsLeft size={20} />
                 </button>
 
-                {/* Botão Anterior (<) */}
                 <button
                     className={styles.button}
                     onClick={() => onPageChange(currentPage - 1)}
@@ -32,7 +30,6 @@ export default function Pagination({ currentPage, totalPages, onPageChange }) {
                     <ChevronLeft size={20} />
                 </button>
 
-                {/* Botão Próxima (>) */}
                 <button
                     className={styles.button}
                     onClick={() => onPageChange(currentPage + 1)}
@@ -42,7 +39,6 @@ export default function Pagination({ currentPage, totalPages, onPageChange }) {
                     <ChevronRight size={20} />
                 </button>
 
-                {/* Botão Última Página (>>) */}
                 <button
                     className={styles.button}
                     onClick={() => onPageChange(totalPages)}
