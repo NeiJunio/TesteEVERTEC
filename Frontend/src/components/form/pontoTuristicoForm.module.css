@@ -1,0 +1,189 @@
+/* Reset local para garantir que o padding não estoure o tamanho */
+.form,
+.form * {
+    box-sizing: border-box;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 100%;
+}
+
+.header {
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f1f5f9;
+}
+
+.headerTitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header h2 {
+    color: #0f172a;
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+.closeBtn {
+    background: #f1f5f9;
+    border: none;
+    color: #64748b;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+}
+
+.body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    overflow-y: auto;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    width: 100%;
+}
+
+.inputGroup label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #475569;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.inputGroup input,
+.inputGroup select,
+.inputGroup textarea {
+    padding: 10px 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    background: #f8fafc;
+    width: 100%;
+    /* Ocupa todo o espaço do grupo */
+}
+
+/* --- LINHA DE ENDEREÇO (TIPO + LOGRADOURO) --- */
+.inlineRow {
+    display: flex;
+    gap: 12px;
+    width: 100%;
+}
+
+.selectType {
+    flex: 0 0 120px;
+    /* Largura fixa de 120px, não encolhe nem cresce */
+}
+
+.inputStreet {
+    flex: 1;
+    /* Ocupa TODO o resto do espaço disponível */
+    min-width: 0;
+    /* Impede o input de estourar o flex container */
+}
+
+/* --- GRID DE LOCALIZAÇÃO (NÚMERO + UF + CIDADE) --- */
+.locationGrid {
+    display: flex;
+    flex-wrap: wrap;
+    /* Se não couber, a cidade desce */
+    gap: 12px;
+    width: 100%;
+}
+
+.locationGrid>div:nth-child(1) {
+    width: 80px;
+}
+
+/* Grupo do Número */
+.locationGrid>div:nth-child(2) {
+    width: 80px;
+}
+
+/* Grupo da UF */
+.locationGrid>div:nth-child(3) {
+    flex: 1;
+    min-width: 250px;
+    /* Se a área da cidade for menor que 250px, ela quebra para baixo */
+}
+
+.upperCase {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* --- RODAPÉ --- */
+.footer {
+    padding: 16px 20px;
+    background: #f8fafc;
+    border-top: 1px solid #f1f5f9;
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.saveBtn {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.cancelBtn {
+    background: white;
+    color: #64748b;
+    border: 1px solid #e2e8f0;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 550px) {
+    .inlineRow {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .selectType {
+        width: 100%;
+    }
+
+    .locationGrid>div {
+        width: 100% !important;
+        /* Em mobile, cada campo vira uma linha */
+    }
+
+    .footer {
+        flex-direction: column-reverse;
+    }
+
+    .saveBtn,
+    .cancelBtn {
+        width: 100%;
+        justify-content: center;
+    }
+}

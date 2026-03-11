@@ -1,45 +1,40 @@
 import { useState, useCallback } from "react";
-import api from "../services/api";
+import { getAllPontos } from "../services/pontoTuristico.service";
 
 export const usePontosTuristicos = () => {
     const [pontosTuristicos, setPontosTuristicos] = useState([]);
     const [loading, setLoading] = useState(false);
-
+    
+    // Adicione os estados de paginação de volta
     const [page, setPage] = useState(1);
     const [totalPages, setTotalPages] = useState(1);
 
-    const [error, setError] = useState(null);
-
-    const fetchPontosTuristicos = useCallback(async (termo = '', pagina = 1, itensPorPagina = 10) => {
+    const fetchPontosTuristicos = useCallback(async (termo = '', pagina = 1, itensPorPagina = 6) => {
         setLoading(true);
-        setError(null);
         try {
-            const response = await api.get("/PontosTuristicos", {
-                params: { termo, pagina, itensPorPagina }
-            });
-            // 1. Pegamos a lista que está dentro de 'item'
-            setPontosTuristicos(response.data.item || []);
-
-            // 2. Ajustamos a paginação com base nos nomes que vêm da sua API
-            // Sua API manda 'total' e 'paginaAtual'
-            const totalItens = response.data.total;
+            const data = await getAllPontos(termo, pagina, itensPorPagina);
+            
+            // Atualiza a lista de itens
+            setPontosTuristicos(data.item || []);
+            
+            // ATUALIZAÇÃO DA PAGINAÇÃO:
+            // O Service retorna data.total e data.paginaAtual
+            const totalItens = data.total || 0;
             setTotalPages(Math.ceil(totalItens / itensPorPagina));
-            setPage(response.data.paginaAtual);
+            setPage(data.paginaAtual || pagina);
 
         } catch (err) {
-            setError("Erro ao carregar pontos turísticos", err);
+            console.error("Erro ao buscar pontos:", err);
         } finally {
             setLoading(false);
         }
-
     }, []);
 
-    return {
-        pontosTuristicos,
-        loading,
-        page,
-        totalPages,
-        error,
-        fetchPontosTuristicos,
+    return { 
+        pontosTuristicos, 
+        loading, 
+        page,           // Exporte o estado atualizado
+        totalPages,     // Exporte o estado atualizado
+        fetchPontosTuristicos 
     };
-}
+};
